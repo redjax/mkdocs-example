@@ -1,0 +1,30 @@
+[project]
+name = "mkdocs-test"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [{ name = "redjax", email = "none@none.com" }]
+dependencies = []
+requires-python = "==3.11.*"
+readme = "README.md"
+license = { text = "MIT" }
+
+
+[tool.pdm]
+package-type = "application"
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "mkdocs>=1.5.3",
+    "mkdocs-material>=9.5.3",
+    "mkdocs-gen-files>=0.5.0",
+    "mkdocstrings[python]>=0.24.0",
+    "mkdocs-autorefs>=0.5.0",
+    "mkdocs-section-index>=0.3.8",
+    "markdown-include>=0.8.1",
+    "mkdocs-literate-nav>=0.6.1",
+]
+
+[tool.pdm.scripts]
+
+build-docs = { cmd = "mkdocs build" }
+serve-docs = { cmd = "mkdocs serve --dev-addr 0.0.0.0:8000" }
