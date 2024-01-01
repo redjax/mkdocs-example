@@ -21,7 +21,7 @@ This is where instructions for using the app would go.
 
 Example of a Python snippet:
 
-``` py title="example.py"
+``` py title="example.py" linenums="1"
 from pathlib import Path
 from datetime import datetime
 
@@ -29,4 +29,4 @@ now = datetime.now()
 cwd = Path.cwd() # (1)
 ```
 
-1. This is a code annotation! You can use the `.cwd()` method of the `pathlib.Path` object to get the current working directory.
+1. This is a code annotation! You can use the `#!python .cwd()` method of the `pathlib.Path` object to get the current working directory.
